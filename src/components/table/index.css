@@ -1,0 +1,21 @@
+.component.table {
+    margin-top: 45px;
+}
+.row {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+.row span {
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.row.content {
+    border-bottom:1px solid  rgb(196, 178, 178);
+}
+
+.row.heading {
+    background-color: rgb(196, 178, 178);
+}

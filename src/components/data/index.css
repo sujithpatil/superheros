@@ -1,0 +1,79 @@
+.component.data {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 250px;
+}
+
+.button, .input {
+    padding: 6px;
+    width: 125px;
+    margin-right: 25px;
+    outline: none;
+}
+
+.input.search {
+    width: 175px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button.delete {
+    color: #ff0101;
+    border: 1px solid #ff0101;
+    border-radius: 6px;
+}
+
+.button.add {
+    color: #0202ff;
+    border: 1px solid #0202ff;
+    border-radius: 6px;
+}
+
+.input-container {
+    margin: 15px;
+}
+
+.input-container label {
+    color: #ffffff;
+}
+
+.form-heading {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.close-block {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.input.form-element {
+    width: 250px;
+}
+
+.add-hero {
+    width: 250px;
+    color: #0202ff;
+    border: 1px solid #0202ff;
+}
+
+.popup.container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
