@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export default Image = () => {
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    return <div className='component-container'>
+        <span id="image" draggable={true} className='source' onDragStart={drag}>IMAGE</span>
+        <span id="logo" draggable={true} className='source' onDragStart={drag}>LOGO</span>
+        <span id="video" draggable={true} className='source' onDragStart={drag}>VIDEO</span>
+        <span id="button" draggable={true} className='source' onDragStart={drag}>BUTTON</span>
+    </div>
+}
